@@ -6,6 +6,24 @@
   <title>Ganamos.net - Crear Usuario</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src='https://connect.facebook.net/en_US/fbevents.js';
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script');
+    fbq('init', '727212773591942');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=727212773591942&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
   <style>
     body {
       margin: 0;
@@ -17,12 +35,10 @@
       align-items: center;
       padding: 20px;
     }
-
     header {
       margin-top: 30px;
       text-align: center;
     }
-
     .casino-title {
       font-family: 'Bebas Neue', cursive;
       font-size: 64px;
@@ -30,29 +46,24 @@
       margin: 20px 0 10px;
       letter-spacing: 2px;
     }
-
     hr {
       width: 100%;
       border: none;
       border-top: 1px solid #444;
       margin: 20px 0;
     }
-
     .verified {
       text-align: center;
     }
-
     .verified h2 {
       font-size: 28px;
       margin: 10px 0;
     }
-
     .verified .green {
       color: #D4AF37;
       font-weight: 700;
       font-size: 22px;
     }
-
     .message {
       background: #30004d;
       padding: 20px;
@@ -62,7 +73,6 @@
       font-weight: 500;
       text-align: center;
     }
-
     .whatsapp-button {
       background-color: #D4AF37;
       color: #1a1a1a;
@@ -84,12 +94,10 @@
       z-index: 1;
       min-width: 280px;
     }
-
     .whatsapp-button i {
       margin-right: 12px;
       font-size: 26px;
     }
-
     .clientes {
       background-color: #30004d;
       color: #fff;
@@ -99,7 +107,6 @@
       margin-bottom: 20px;
       font-size: 18px;
     }
-
     .footer {
       position: fixed;
       bottom: 0;
@@ -117,33 +124,26 @@
   <header>
     <div class="casino-title">GANAMOS.NET</div>
   </header>
-
   <hr />
-
   <section class="verified">
     <h2>✅ <b>Plataforma Verificada</b> ✅</h2>
     <p class="green">Casino de Confianza</p>
   </section>
-
   <div class="message">
     Te estamos conectando con nuestro equipo vía WhatsApp.
   </div>
-
   <a class="whatsapp-button pulse" 
      href="https://wa.me/5492281349289?text=%F0%9F%8E%B0%20Holaa%2C%20quiero%20crear%20un%20usuario%20para%20empezar%20a%20jugar%20%F0%9F%98%84" 
      target="_blank"
      onclick="fbq('trackCustom', 'ClickWhatsApp')">
     <i class="fab fa-whatsapp"></i> CREAR USUARIO
   </a>
-
   <div class="clientes">
     👥 +10.000 CLIENTES GANANDO todos los días
   </div>
-
   <div class="footer">
     🎰 CREA TU USUARIO AHORA POR WHATSAPP
   </div>
-
   <script>
     const whatsappBtn = document.querySelector('.whatsapp-button');
     if(whatsappBtn) {
